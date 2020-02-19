@@ -1,0 +1,8 @@
+{
+  "Login": "Login",
+  "Logout": "Logout",
+  "SignIn": "Sign in",
+  "PlaceholderUsername": "Your username",
+  "PlaceholderEmail": "A valid e-mail address",
+  "LoadingGenericText": "Loading, please wait.."
+}
