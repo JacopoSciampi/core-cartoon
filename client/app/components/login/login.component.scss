@@ -1,0 +1,106 @@
+@import '../../styles/palette.scss';
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: $light-purple;
+  background: url('/assets/images/home-bg.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  user-select: none;
+
+  .login-container {
+    height: 100%;
+    color: $perl;
+    transition: $standard-transition;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px;
+      flex-grow: 1;
+      max-height: 30px;
+      background-color: $dark;
+      color: $perl;
+    }
+
+    .form {
+      flex-grow: 2;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 0px 20px;
+
+      span {
+        margin-left: 9px;
+      }
+
+      span,
+      input {
+        margin-bottom: 10px;
+        width: 200px;
+      }
+
+      .button {
+        width: 200px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $standard-transition;
+        background-color: #274690;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #56CBF9;
+        }
+      }
+
+      input {
+        border: none;
+        box-sizing: border-box;
+        padding: 5px 10px;
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px 5px;
+      flex-grow: 1;
+      max-height: 30px;
+      background-color: $dark;
+      color: $perl;
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .login-container {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.4);
+  }
+
+  .form {
+    align-items: center !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .login-container {
+    width: 350px;
+    background-color: rgba(51, 51, 51, 0.9);
+  }
+}

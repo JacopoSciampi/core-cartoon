@@ -1,1 +1,33 @@
-<p>{{'PlaceholderUsername' | translate}}</p>
+<div class="wrapper">
+  <div class="login-container">
+    <div class="header">
+      <div class="header-left">
+        <span>{{'AlauntHeaderTitle' | translate}}
+        </span>
+      </div>
+      <div class="header-right">
+        <!-- TODO -> svgs with language change -->
+      </div>
+    </div>
+    <div class="form">
+      <span>{{'PlaceholderUsername' | translate}}</span>
+      <input type="text" [placeholder]="'PlaceholderUsername' | translate" #username>
+      <span>{{'Password' | translate}}</span>
+      <input type="password" [placeholder]="'PlaceholderPassword' | translate" #password>
+      <div class="button">{{'Login' | translate}}</div>
+    </div>
+    <div class="footer">
+      <span>{{'AlauntFooterTitle' | translate}}</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- {
+    "Login": "Login",
+    "Logout": "Logout",
+    "SignIn": "Sign in",
+    "PlaceholderUsername": "Your username",
+    "PlaceholderEmail": "A valid e-mail address",
+    "LoadingGenericText": "Loading, please wait.."
+  } -->

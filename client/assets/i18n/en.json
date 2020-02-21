@@ -2,7 +2,11 @@
   "Login": "Login",
   "Logout": "Logout",
   "SignIn": "Sign in",
+  "Password": "Password",
+  "PlaceholderPassword": "Your passowrd",
   "PlaceholderUsername": "Your username",
   "PlaceholderEmail": "A valid e-mail address",
+  "AlauntHeaderTitle": "Alaunt, un MMORPG gratuito.",
+  "AlauntFooterTitle": "Un progetto Angular fatto da Jeko.",
   "LoadingGenericText": "Loading, please wait.."
 }

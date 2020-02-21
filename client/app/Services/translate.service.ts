@@ -19,6 +19,7 @@ export class TranslationService {
 
         if (!locale || !this.supportedLanguages.find(el => el === locale)) {
             this.translate.setDefaultLang('en');
+            this.storageService.setValue('locale', 'en');
         } else {
             this.translate.setDefaultLang(locale);
         }

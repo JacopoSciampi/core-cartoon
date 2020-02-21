@@ -24,9 +24,13 @@
             "tsConfig": "./tsconfig.app.json",
             "aot": true,
             "assets": [
-              "./assets"
+              "./assets",
+              "./app/styles"
             ],
-            "styles": [],
+            "styles": [
+                "./app/styles/core.scss",
+                "./app/styles/palette.scss"
+            ],
             "scripts": []
           },
           "configurations": {
