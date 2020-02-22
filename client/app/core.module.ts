@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
-import { ToastNoAnimationModule } from 'ngx-toastr';
+import { ToastNoAnimationModule, ToastrModule } from 'ngx-toastr';
 
 import { routeConfiguration } from './configurations/routing-config';
 
@@ -24,6 +25,7 @@ import { TranslationService } from './Services/translate.service';
     imports: [
         BrowserModule,
         HttpClientModule,
+        BrowserAnimationsModule,
         RouterModule.forRoot(
             routeConfiguration
         ),
@@ -34,7 +36,11 @@ import { TranslationService } from './Services/translate.service';
                 deps: [HttpClient]
             }
         }),
-        ToastNoAnimationModule.forRoot(),
+        ToastrModule.forRoot({
+            timeOut: 3000,
+            positionClass: 'toast-top-right',
+            preventDuplicates: true,
+        })
     ],
     providers: [
         AuthGuard,

@@ -28,8 +28,9 @@
               "./app/styles"
             ],
             "styles": [
-                "./app/styles/core.scss",
-                "./app/styles/palette.scss"
+              "./app/styles/core.scss",
+              "./app/styles/palette.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
