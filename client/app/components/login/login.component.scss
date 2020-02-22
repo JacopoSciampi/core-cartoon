@@ -49,6 +49,18 @@
         width: 200px;
       }
 
+      span.sign-in {
+        color: #56CBF9;
+        transition: $standard-transition;
+        cursor: pointer;
+        width: 250px;
+      }
+
+      span.sign-in:hover {
+        color: #274690;
+        text-decoration: underline;
+      }
+
       .button {
         width: 200px;
         height: 30px;
@@ -60,6 +72,7 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
+        margin-bottom: 60px;
 
         &:hover {
           background-color: #56CBF9;

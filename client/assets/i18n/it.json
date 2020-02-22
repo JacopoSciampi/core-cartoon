@@ -1,12 +1,14 @@
 {
-  "Login": "Login",
-  "Logout": "Logout",
-  "SignIn": "Registrati",
+  "Login": "Accedi",
+  "Registrate": "Registrati",
   "Password": "Password",
+  "Logout": "Disconnetti",
+  "LoginSignIn": "Hai già un account? Accedi!",
   "PlaceholderPassword": "La tua password",
+  "LoginSignUp": "Non hai un account? Registrati!",
   "PlaceholderUsername": "Il tuo nome utente..",
   "PlaceholderEmail": "Una e-mail valida",
-  "AlauntHeaderTitle": "Alaunt, a free MMORPG.",
-  "AlauntFooterTitle": "An Angular project made by Jeko.",
-  "LoadingGenericText": "Caricamento in corso, attendere..",
+  "AlauntHeaderTitle": "Alaunt, un MMORPG gratuito",
+  "AlauntFooterTitle": "Un progetto Angular fatto da Jeko",
+  "LoadingGenericText": "Caricamento in corso, attendere.."
 }

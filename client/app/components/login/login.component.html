@@ -14,7 +14,21 @@
       <input type="text" [placeholder]="'PlaceholderUsername' | translate" #username>
       <span>{{'Password' | translate}}</span>
       <input type="password" [placeholder]="'PlaceholderPassword' | translate" #password>
-      <div class="button">{{'Login' | translate}}</div>
+
+      <ng-container *ngIf="isLoginScreen">
+        <div class="button" (click)="onLoginClick(username.value, password.value)">{{'Login' | translate}}</div>
+      </ng-container>
+      <ng-container *ngIf="!isLoginScreen">
+        <div class="button" (click)="onRegistrateClick(username.value, password.value)">{{'Registrate' | translate}}
+        </div>
+      </ng-container>
+
+      <ng-container *ngIf="isLoginScreen">
+        <span class="sign-in" (click)="toggleLoginScreen()">{{'LoginSignUp' | translate}}</span>
+      </ng-container>
+      <ng-container *ngIf=" !isLoginScreen">
+        <span class="sign-in" (click)="toggleLoginScreen()">{{'LoginSignIn' | translate}}</span>
+      </ng-container>
     </div>
     <div class="footer">
       <span>{{'AlauntFooterTitle' | translate}}</span>

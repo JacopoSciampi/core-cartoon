@@ -12,6 +12,7 @@ import { routeConfiguration } from './configurations/routing-config';
 import { LoginComponent } from './components/login/login.component';
 
 import { AuthGuard } from './Services/auth.guard';
+import { AuthService } from './Services/auth.service';
 import { ToastService } from './Services/toast.service';
 import { StorageService } from './Services/storage.service';
 import { TranslationService } from './Services/translate.service';
@@ -37,6 +38,7 @@ import { TranslationService } from './Services/translate.service';
     ],
     providers: [
         AuthGuard,
+        AuthService,
         ToastService,
         StorageService,
         TranslationService
