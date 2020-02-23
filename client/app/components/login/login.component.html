@@ -6,6 +6,7 @@
         </span>
       </div>
       <div class="header-right">
+        <img [src]="currentLanguageIcon" draggable="false" (click)="toggleLanguageChange()">
         <!-- TODO -> svgs with language change -->
       </div>
     </div>
@@ -34,6 +35,20 @@
       <span>{{'AlauntFooterTitle' | translate}}</span>
     </div>
   </div>
+
+  <aside class="modal-change-lanaguage" *ngIf="isLanguageModalOpened" aria-label="modal-change-languge">
+    <ng-container *ngIf="isChangingLanguage">
+
+    </ng-container>
+    <ng-container *ngIf="!isChangingLanguage">
+      <ng-container *ngFor="let item of flagList">
+        <div class="list-element" (click)="changeLanguage(item.value)">
+          <img [src]="item.icon">
+          <span>{{item.text | translate}}</span>
+        </div>
+      </ng-container>
+    </ng-container>
+  </aside>
 </div>
 
 

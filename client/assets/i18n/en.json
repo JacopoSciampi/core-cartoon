@@ -5,11 +5,17 @@
   "Password": "Password",
   "LoginSignIn": "Already have an account? Login!",
   "LoginSignUp": "Don't have an account? Sign up!",
-  "PlaceholderPassword": "Your passowrd",
+  "PlaceholderPassword": "Your password",
   "PlaceholderUsername": "Your username",
   "PlaceholderEmail": "A valid e-mail address",
   "AlauntHeaderTitle": "Alaunt, a free MMORPG.",
   "LoadingGenericText": "Loading, please wait..",
   "LoginCreateAccount": "Don't have an account? Sign up!",
-  "AlauntFooterTitle": "An Angular project made by Jeko."
+  "AlauntFooterTitle": "An Angular project made by Jeko.",
+  "English": "English",
+  "Italian": "Italian",
+  "Language changed correctly": "Language changed correctly",
+  "Server error: cannot parse the body": "Username & password are required fields",
+  "Server error: username already taken": "Username already taken",
+  "Server error: there was an error while generating the token": "Server internal error"
 }

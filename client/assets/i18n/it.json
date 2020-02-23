@@ -10,5 +10,11 @@
   "PlaceholderEmail": "Una e-mail valida",
   "AlauntHeaderTitle": "Alaunt, un MMORPG gratuito",
   "AlauntFooterTitle": "Un progetto Angular fatto da Jeko",
-  "LoadingGenericText": "Caricamento in corso, attendere.."
+  "LoadingGenericText": "Caricamento in corso, attendere..",
+  "English": "Inglese",
+  "Italian": "Italiano",
+  "Language changed correctly": "Linguaggio cambiato correttamente",
+  "Server error: cannot parse the body": "Username e password richiesti",
+  "Server error: username already taken": "Username già in uso",
+  "Server error: there was an error while generating the token": "Errore server interno"
 }

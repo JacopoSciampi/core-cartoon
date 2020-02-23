@@ -1,0 +1,1 @@
+scp -r ./assets root@jacoposciampi.com:/etc/site/site
